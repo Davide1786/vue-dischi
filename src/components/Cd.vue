@@ -1,9 +1,10 @@
 <template>
   <div class="wrapper text-center">
     <div class="wrapper-cd">
-      <img class="mb-3" :src="info.poster" :alt="info.title">
+      <img class="mb-3" :src="info.poster" alt="">
+      <h2> {{info.title}} </h2>
       <h4> {{info.author}} </h4>
-      <div> {{info.year}} </div>
+      <h6> {{info.year}} </h6>
     </div>
   </div>
 </template>
@@ -19,11 +20,19 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 
+ h2 {
+      margin-bottom: 20px;
+    }
+
+ h4,
+ h6 {
+   color: grey;
+   margin-bottom: 0px;
+ }   
+
 .wrapper {
-  display: flex;
-  height: 350px;
-  margin-bottom: 20px;
-  flex-direction: column;
+  height: 450px;
+  width: 100%;
   background: #2E3A46;
 
     .wrapper-cd {

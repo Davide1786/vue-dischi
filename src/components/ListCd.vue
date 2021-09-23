@@ -45,13 +45,24 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  padding: 50px;
+  
+}
+
   .wrapper {
-    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px 5px;
     justify-items: center;
+    
   }
 
     .testo {
-      // width: calc(100% / 5);
+      width: calc(100% / 5);
       color: white;
       justify-content: space-around;
     }

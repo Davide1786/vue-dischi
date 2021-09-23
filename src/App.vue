@@ -24,9 +24,7 @@ export default {
 
 .container-fluid {
   background: #1E2D3B;
-  // height: 100%;
   height: 100vh;
-  // position: relative;
 }
 
 </style>
